@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css '%}"> <!-- static 폴더내의 css 파일 가져와서 적용  href가 중요 ! -->
+    <script  src="{% static 'js/bootstrap.min.js '%}"></script> <!-- static 폴더내의 js 파일 가져와서 적용  src가 중요 ! -->
+    
+    <title>Bootstrap이란 무엇인가!!</title>
+</head>
+<body>
+    <div class="container">
+        안뇽 Bootstrap 
+        <!-- <button type="button" class="btn btn-success">버튼</button> -->
+
+        <div class="row">
+            <div class="col-sm">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/logo.jpg'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">풀을 보는중</h5>
+                    <p class="card-text">부트스트랩으로 퍼가요~  </p>
+                    <a href="#" class="btn btn-primary">버튼 클릭하면 다른 사진이 나올까?</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/stand.jpg'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">한강</h5>
+                    <p class="card-text">부트스트랩 신기  </p>
+                    <a href="#" class="btn btn-warning" >버튼 버튼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'img/hands.jpg'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">두손으로도 안가려짐</h5>
+                    <p class="card-text"> 신기한 웹의 세계  </p>
+                    <a href="#" class="btn btn-danger">엽떡 색깔</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">  
+        A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+        </div>
+    </div>
+    
+</body>
+</html>  
